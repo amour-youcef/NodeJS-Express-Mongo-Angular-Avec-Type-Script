@@ -1,0 +1,28 @@
+{
+  "name": "NodeJS_TS",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "npx jest --verbose",
+    "test-watch": "npx jest --verbose --watchAll",
+    "start": "npx tsc && node dist/index.js",
+    "dev": "concurrently -n \"TS, Node\" \"npx tsc --watch\" \"npx jest --verbose --watchAll \" \"nodemon dist/index.js\""
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/jest": "^24.0.25",
+    "@types/node": "^13.1.4",
+    "concurrently": "^5.0.2",
+    "jest": "^24.9.0",
+    "nodemon": "^2.0.2",
+    "ts-jest": "^24.2.0",
+    "typescript": "^3.7.4"
+  },
+  "dependencies": {
+    "@types/express": "^4.17.2",
+    "express": "^4.17.1"
+  }
+}
